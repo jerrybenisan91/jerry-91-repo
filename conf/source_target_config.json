@@ -1,0 +1,14 @@
+{
+"CUSTOMER" :
+    {
+    "url" = "jdbc:mysql://your_hostname:port/your_database"
+    "properties" = {
+                    "user": "your_username",
+                    "password": "your_password",
+                    "driver": "com.mysql.jdbc.Driver"
+                    }
+    "table_name" = "CUSTOMER_MASTER"
+    "target_path" = "abfs://azuredevuri@dev.dfs.core.windows.net/filestore/data/workdir/retail_db/ods" 
+    "select_column_list" = ["customer_id","customer_name","country","cust_rating","last_updated" ]
+    }
+}
